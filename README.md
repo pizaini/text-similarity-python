@@ -1,0 +1,1 @@
+# Text Similarity App by Python
