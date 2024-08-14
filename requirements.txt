@@ -1,0 +1,5 @@
+fastapi[standard]~=0.112.0
+sentence-transformers
+scipy~=1.13.1
+pydantic~=2.8.2
+starlette~=0.37.2
