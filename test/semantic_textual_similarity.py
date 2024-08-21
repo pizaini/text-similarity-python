@@ -1,6 +1,6 @@
 from sentence_transformers import SentenceTransformer
 
-model = SentenceTransformer('saved_model_data')
+model = SentenceTransformer('../saved_model_data')
 
 # Sample sentence
 sentences = ["Nabi sedang khutbah hari jum'at dan jamaah mendatangi pedagang",
