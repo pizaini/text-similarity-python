@@ -6,8 +6,8 @@ COPY ./requirements.txt /code/requirements.txt
 
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
-#copy pre-trained data
-#COPY saved_model_data /code/
+#crate dir to save as volume
+RUN mkdir /code/save_model_data
 
 #copy single file app
 COPY main.py /code/
