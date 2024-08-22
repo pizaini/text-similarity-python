@@ -7,10 +7,11 @@ COPY ./requirements.txt /code/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 #crate dir to save as volume
-RUN mkdir /code/save_model_data
+RUN mkdir /code/saved_model_data
 
 #copy single file app
 COPY main.py /code/
+COPY model.py /code/
 
 #
 CMD ["fastapi", "run", "main.py", "--port", "80"]
